@@ -29,7 +29,7 @@ gulp.task('js', () => {
         }))
         .pipe(source('scripts.js'))
         .pipe(buffer())
-        .pipe(gulp.dest('public/'))
+        .pipe(gulp.dest('public/scripts'))
         .pipe(reload({ stream: true }));
 });
 
