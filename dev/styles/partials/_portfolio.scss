@@ -25,6 +25,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    margin-top: 100px;
 
     .image,
     .description {
@@ -33,6 +34,7 @@
     .description {
     	padding: 0 30px;
     }
+
     .description:nth-child(odd) {
     	text-align: right;
     }
@@ -57,14 +59,24 @@
 		font-family: $bodyFont;
 		display: block;
 		padding-top: 10px;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $yellow;
 	}
 
 	a {
 		text-transform: uppercase;
 		display: inline-block;
-		border: 1px solid $darkgrey;
+		border: 1px solid $mediumgrey;
+        color: $mediumgrey;
 		margin-top: 10px;
-		padding: 8px;
+		padding: 15px;
+        transition: all 0.5s;   
+        &:hover {
+            background-color: $mediumgrey;
+            color: $white;
+        }
 	}
 }
 

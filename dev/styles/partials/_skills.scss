@@ -1,0 +1,27 @@
+.skills-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+
+	h2 {
+		font-size: 3.6rem;
+		text-transform: uppercase;
+		&:before {
+		    content: "";
+		    width: 200px;
+		    display: block;
+		    height: 3px;
+		    background-color: $darkgrey;
+		    margin-bottom: 20px;
+		}
+	}
+
+	li {
+		padding: 20px;
+	}
+
+    .devicons {
+        font-size: 100px;
+    }
+}

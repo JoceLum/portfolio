@@ -1,0 +1,87 @@
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    span {
+        font-family: $bodyFont;
+        font-style: italic;
+        text-align: right;
+        color: $mediumgrey;
+        padding-bottom: 5px;
+    }
+    h2 {
+        font-size: 3.6rem;
+        font-weight: 700;
+        line-height: 50px;
+        text-transform: uppercase;
+        text-align: left;
+        margin: 5px 0 10px 0;
+        &:before {
+            content: "";
+            width: 180px;
+            display: block;
+            height: 3px;
+            background-color: $darkgrey;
+            margin-bottom: 20px;
+        }
+    }
+    p {
+        color: $mediumgrey;
+        font-weight: 400;
+        line-height: 28px;
+        padding: 10px 0 80px 0;
+    }
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+
+    .user-contact,
+    .user-form {
+        display: flex;
+        flex-direction: column;
+        width: calc(50% - 40px);
+        margin: 0 20px;
+
+        input:not([type='submit']) {
+            border: none;
+            border-bottom: 2px solid $lightgrey;
+            outline: none;
+            padding: 20px 0;
+            width: 400px;
+
+            &:focus {
+                border-bottom: 2px solid $darkgrey;
+            }
+        }
+    }
+}
+
+.user-form {
+    textarea {
+        border: none;
+        border-bottom: 2px solid $lightgrey;
+        font-family: $bodyFont;
+        outline: none;
+
+        &:focus {
+            border-bottom: 2px solid $darkgrey;
+        }
+    }
+}
+
+.submit-btn {
+	input[type='submit'] {
+		background-color: transparent;
+		margin: 80px 0;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 0.8rem;
+		border: none;
+		border-top: 2px solid $darkgrey;
+		border-bottom: 2px solid $darkgrey;
+		padding: 10px 0;
+	}
+}

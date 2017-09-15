@@ -1,71 +1,62 @@
 .about-me-section {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
-	.content,
-	.images {
-		width: 50%;
-	}
+    .content,
+    .images {
+        width: 50%;
+    }
 }
 
 .content {
-	span, 
-	p {
-		line-height: 30px;
-		padding-top: 20px;
-	}
+    span,
+    p {
+        line-height: 30px;
+        padding-top: 20px;
+    }
 
-	span {
-		font-family: $headerFont;
-		font-weight: 700;
-		line-height: 32px;
-		font-size: 1.6rem;
-		&:before {
-			content: "";
-			width: 100px;
-			display: block;
-			height: 2px;
-			background-color: $darkgrey;
-			margin-bottom: 20px;
-		}
-	}
-	p {
-		color: $mediumgrey;
-		font-size: 0.9rem;
-		font-weight: 400;
-		line-height: 28px;
-	}
+    span {
+        font-family: $headerFont;
+        font-weight: 700;
+        line-height: 32px;
+        font-size: 1.6rem;
+        &:before {
+            content: "";
+            width: 100px;
+            display: block;
+            height: 2px;
+            background-color: $darkgrey;
+            margin-bottom: 20px;
+        }
+    }
+    p {
+        color: $mediumgrey;
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 28px;
+    }
 }
 
 .images {
-		padding-left: 30px;
-		position: relative;
-	.primary-image {
-		height: 220px;
-		width: 220px;
-		position: absolute;
-		z-index: 2;
-		background-image: url(/assets/me.jpg)
-	}
-	.yellow-box {
-		height: 200px;
-		width: 200px;
-		position: absolute;
-		z-index: 1;
-		top: 50px;
-		left: 145px;
-		background-color: $yellow;
-	}
-	.secondary-image {
-		height: 200px;
-		width: 180px;
-		position: absolute;
-		z-index: 2;
-		top: 80px;
-		right: 40px;
-		background-color: lightgreen;
-	}
-
+    padding-left: 30px;
+    position: relative;
+    .primary-image {
+        height: 220px;
+        width: 220px;
+        position: absolute;
+        z-index: 2;
+        background-image: url(/assets/me.jpg)
+    }
+    .yellow-box {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        z-index: 1;
+        top: 50px;
+        left: 145px;
+        // background-color: lightgreen;
+        background-color: $yellow;
+    }
 }
