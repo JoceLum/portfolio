@@ -1,0 +1,75 @@
+.portfolio-section {
+    padding-top: 50px;
+    h2 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 3.6rem;
+        line-height: 50px;
+        color: $darkgrey;
+        &:before {
+            content: "";
+            width: 200px;
+            display: block;
+            height: 3px;
+            background-color: $darkgrey;
+            margin-bottom: 20px;
+        }
+        span {
+            display: block;
+        }
+    }
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    .image,
+    .description {
+        width: 50%;
+    }
+    .description {
+    	padding: 0 30px;
+    }
+    .description:nth-child(odd) {
+    	text-align: right;
+    }
+}
+
+.description {
+	h3 {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 1.4rem;
+		line-height: 32px;
+	}
+	p,
+	span {
+		color: $mediumgrey;
+		font-weight: 400;
+		font-size: 0.9rem;
+		line-height: 28px
+	}
+
+	span {
+		font-family: $bodyFont;
+		display: block;
+		padding-top: 10px;
+	}
+
+	a {
+		text-transform: uppercase;
+		display: inline-block;
+		border: 1px solid $darkgrey;
+		margin-top: 10px;
+		padding: 8px;
+	}
+}
+
+.image {
+	img {
+		width: 90%;
+	}
+}
