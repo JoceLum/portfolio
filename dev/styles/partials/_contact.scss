@@ -1,9 +1,13 @@
 .contact-section {
+    padding: 50px 0;
+}
+.contact {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 
-    span {
+    .title {
         font-family: $bodyFont;
         font-style: italic;
         text-align: right;
@@ -30,7 +34,20 @@
         color: $mediumgrey;
         font-weight: 400;
         line-height: 28px;
-        padding: 10px 0 80px 0;
+        padding: 10px 0 50px 0;
+        @include respond-to('medium') {
+            padding: 20px 50px;
+            text-align: center;
+        }
+
+        a {
+            font-family: $bodyFont;
+            color: $mediumgrey;
+            transition: all 0.3s;
+            &:hover {
+                color: $accentColour;
+            }
+        }
     }
 }
 
@@ -43,15 +60,26 @@ form {
         display: flex;
         flex-direction: column;
         width: calc(50% - 40px);
-        margin: 0 20px;
+        margin: 80px 20px;
+        @include respond-to('medium')  {
+            width: 100%;
+            align-items: center;
+        }
+
 
         input:not([type='submit']) {
             border: none;
             border-bottom: 2px solid $lightgrey;
             outline: none;
-            padding: 20px 0;
-            width: 400px;
-
+            padding: 21px 0;
+            width: 800px;
+            color: $mediumgrey;
+            @include respond-to('large')  {
+                width: 350px;
+            }
+            @include respond-to('medium') {
+                width: 500px;
+            }
             &:focus {
                 border-bottom: 2px solid $darkgrey;
             }
@@ -65,6 +93,7 @@ form {
         border-bottom: 2px solid $lightgrey;
         font-family: $bodyFont;
         outline: none;
+        color: $mediumgrey;
 
         &:focus {
             border-bottom: 2px solid $darkgrey;
@@ -73,15 +102,47 @@ form {
 }
 
 .submit-btn {
-	input[type='submit'] {
-		background-color: transparent;
-		margin: 80px 0;
-		text-transform: uppercase;
-		font-weight: 400;
-		font-size: 0.8rem;
-		border: none;
-		border-top: 2px solid $darkgrey;
-		border-bottom: 2px solid $darkgrey;
-		padding: 10px 0;
-	}
+    margin-left: 20px;
+    transition: all, 0.5s;
+    &:hover {
+        color: $accentColour;
+    }
+    @include respond-to('medium')  {
+        margin: 0 auto;    
+    }
+    input[type='submit'] {
+        font-family: $headerFont;
+        background-color: transparent;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 0.8rem;
+        border: none;
+        border-top: 2px solid $darkgrey;
+        border-bottom: 2px solid $darkgrey;
+        padding: 10px 0;
+        transition: all, 0.5s;
+        &:hover {
+            color: $accentColour;
+            border-top: 2px solid $accentColour;
+            border-bottom: 2px solid $accentColour;
+        }
+    }
+}
+
+.backToTop {
+    padding-top: 50px;
+    i {
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        padding-bottom: 10px;
+        transition: all, 0.5s;
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+    span {
+        text-transform: uppercase;
+        font-size: 0.8rem;
+    }
 }

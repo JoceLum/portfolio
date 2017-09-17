@@ -1,5 +1,11 @@
 .portfolio-section {
-    padding-top: 50px;
+    padding: 50px 0;
+    @include respond-to('large') {
+        padding: 50px;
+    }
+    @include respond-to('medium') {
+        padding: 80px;
+    }
     h2 {
         text-transform: uppercase;
         font-weight: 700;
@@ -20,68 +26,95 @@
     }
 }
 
+
 .project {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     margin-top: 100px;
+    @include respond-to('medium') {
+        flex-direction: column-reverse;
+    }
 
     .image,
     .description {
         width: 50%;
+        @include respond-to('medium') {
+            width: 100%;
+            text-align: center;
+        }
     }
     .description {
-    	padding: 0 30px;
+        padding: 0 30px;
+        @include respond-to('medium') {
+            text-align: center;
+            padding: 30px;
+        }
     }
 
     .description:nth-child(odd) {
-    	text-align: right;
+        text-align: right;
+        @include respond-to('medium') {
+            padding: 30px;
+            text-align: center;
+        }
     }
 }
 
 .description {
-	h3 {
-		text-transform: uppercase;
-		font-weight: 700;
-		font-size: 1.4rem;
-		line-height: 32px;
-	}
-	p,
-	span {
-		color: $mediumgrey;
-		font-weight: 400;
-		font-size: 0.9rem;
-		line-height: 28px
-	}
+    h3 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 32px;
+    }
+    p,
+    span {
+        color: $mediumgrey;
+        font-weight: 400;
+        font-size: 0.9rem;
+        line-height: 28px
+    }
 
-	span {
-		font-family: $bodyFont;
-		display: block;
-		padding-top: 10px;
+    span {
+        font-family: $bodyFont;
+        display: block;
+        padding-top: 10px;
         font-size: 0.7rem;
         text-transform: uppercase;
         font-weight: bold;
-        color: $yellow;
-	}
+        color: $accentColour;
+    }
 
-	a {
-		text-transform: uppercase;
-		display: inline-block;
-		border: 1px solid $mediumgrey;
+    a {
+        font-family: $bodyFont;
         color: $mediumgrey;
-		margin-top: 10px;
-		padding: 15px;
-        transition: all 0.5s;   
         &:hover {
-            background-color: $mediumgrey;
-            color: $white;
+            text-decoration: underline;
         }
-	}
+    }
+
+    .project-btn {
+        font-family: $headerFont;
+        text-transform: uppercase;
+        display: inline-block;
+        border: 1px solid $mediumgrey;
+        color: $mediumgrey;
+        margin-top: 10px;
+        padding: 12px;
+        transition: all, 0.3s;
+        &:hover {
+            background-color: $accentColour;
+            color: $white;
+            border: 1px solid $accentColour;
+            text-decoration: none;
+        }
+    } 
 }
 
 .image {
-	img {
-		width: 90%;
-	}
+    img {
+        width: 90%;
+    }
 }

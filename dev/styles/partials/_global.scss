@@ -15,6 +15,15 @@ section {
 
 h1,
 h2,
+h3,
+a,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
 a {
     font-family: $headerFont;
 }
@@ -35,6 +44,10 @@ input {
 a {
 	text-decoration: none;
 	color: $darkgrey;
+}
+
+li {
+    list-style: none;
 }
 
 

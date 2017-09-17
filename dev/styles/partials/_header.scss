@@ -1,4 +1,4 @@
-    ul {
+    .nav {
         list-style: none;
         padding: 0;
         display: flex;
@@ -6,6 +6,26 @@
 
         li {
             padding: 20px;
+        }
+
+        li.first {
+            animation-delay: 0.5s;
+        }
+
+        li.second {
+            animation-delay: 1s;
+        }
+
+        li.third {
+            animation-delay: 1.5s;
+        }
+
+        li.forth {
+            animation-delay: 2s;
+        }
+
+        li.fifth {
+            animation-delay: 2.5s;
         }
 
         span {
@@ -25,8 +45,8 @@
             font-weight: 700;
             transition: all 0.5s;
             &:hover {
-                color: $yellow;
-                border-top: 1px solid $yellow;
+                color: $accentColour;
+                border-top: 1px solid $accentColour;
             }
         }
     }
@@ -37,7 +57,7 @@
         background-size: cover;
         text-align: center;
         border: 1px solid $darkgrey;
-        color: $white;
+        color: $lightgrey;
         height: 80vh;
         display: flex;
         flex-direction: column;
@@ -58,10 +78,14 @@
             z-index: 1;
         }
 
+        h1 {
+            padding-top: 20px;
+        }
+
         span {
             font-family: $bodyFont;
             font-style: italic;
             font-size: 1.4rem;
-            letter-spacing: 5px;
+            letter-spacing: 2px;
         }
     }

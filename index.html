@@ -9,122 +9,154 @@
     <link rel="stylesheet" href="public/styles/styles.css">
     <!--GOOGLE FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i|Montserrat:400,700" rel="stylesheet">
-    <!--ICONS-->
+    <!--SKILLS SECTION ICONS-->
     <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <!--SOCIAL MEDIA ICONS-->
+    <script src="https://use.fontawesome.com/d46cab6097.js"></script>
+    <!--ANIMATE EFFECTS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 
 <body>
     <header>
-        <div id="home" class="wrapper nav-section">
-            <ul>
-                <li><a href="#home"><span>01</span>Home</a></li>
-                <li><a href="#about"><span>02</span>About Me</a></li>
-                <li><a href="#portfolio"><span>03</span>Portfolio</a></li>
-                <li><a href="#skills"><span>04</span>Skills</a></li>
-                <li><a href="#contact"><span>05</span>Contact</a></li>
+        <div id="home" class="nav-section">
+            <ul class="nav wrapper">
+                <li class="animated fadeInLeft first"><a href="#home"><span>01</span>Home</a></li>
+                <li class="animated fadeInLeft second"><a href="#about"><span>02</span>About Me</a></li>
+                <li class="animated fadeInLeft third"><a href="#portfolio"><span>03</span>Portfolio</a></li>
+                <li class="animated fadeInLeft forth"><a href="#skills"><span>04</span>Skills</a></li>
+                <li class="animated fadeInLeft fifth"><a href="#contact"><span>05</span>Contact</a></li>
             </ul>
-        </div>
-        <div class="hero-section wrapper">
-            <span>Hi there, welcome to the portfolio of</span>
-            <h1>Jocelyn Lum</h1>
+            <div class="hero-section wrapper">
+                <span>Hi there, welcome to the portfolio of</span>
+                <h1>Jocelyn Lum</h1>
+            </div>
         </div>
     </header>
-    <section id="about" class="about-me-section wrapper">
-        <div class="content">
-            <span>I am a developer based in Toronto</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis vel dignissimos rerum maxime deleniti sit modi, neque tempora nobis mollitia dolorem aliquid quae voluptate natus laboriosam ea, ipsam molestias enim!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quis sed eius quia error repellat ipsum repellendus veniam itaque inventore.</p>
-        </div>
-        <div class="images">
-            <div class="primary-image"></div>
-            <div class="yellow-box"></div>
-        </div>
+    <section id="about" class="about-me-section">
+        <div class="about wrapper">
+            <div class="content">
+                <span>I am a web developer based in Toronto.</span>
+                <p>I also just graduated from HackerYou's Immersive Web Development Bootcamp. Prior to this, I was actually working as a web developer at Rogers Communications. I decided to leave my contract there to focus on strengthening my skills, as well as learning new frameworks and libraries.</p>
+                <p>My biggest passion as a developer is building beautiful, interactive, and fully-responsive sites. I always strive to write clean, semantic code, and am constantly on the lookout for the best techniques. What I love most about this industry is the endless learning opportunities that it presents, and I am always inspired by new technologies.</p>
+                <p>Outside of coding, I enjoy traveling, cooking, listening to podcasts and music, sampling new cuisines, and exploring my city!</p>
+            </div>
+            <div class="images">
+                <div class="primary-image"></div>
+                <div class="colour-box"></div>
+            </div>
         </div>
     </section>
-    <section id="portfolio" class="portfolio-section wrapper">
-        <h2><span>My</span> Work</h2>
-        <div class="project">
-            <div class="description">
-                <h3>Startupz PSD Conversion</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, quae.</p>
-                <span>HTML 5 | CSS3 | Flexbox</span>
-                <a href="#">See it live</a>
+    <section id="portfolio" class="portfolio-section">
+        <div class="wrapper">
+            <h2><span>My</span> Work</h2>
+            <div class="project">
+                <div class="description">
+                    <h3>Startupz PSD Conversion</h3>
+                    <p>Startupz is a fully responsive website built based on a static PSD mockup. I was given the creative reigns in determining the layout for tablet and mobile screen sizes.</p>
+                    <span>HTML5 | CSS3 | Flexbox</span>
+                    <a href="#" class="project-btn">See it live</a>
+                    <a href="#" class="project-btn">Github</a>
+                </div>
+                <div class="image wow fadeInRight data-wow-duration="2s" data-wow-delay="0.7s"">
+                    <img src="assets/project1.png" alt="project 1">
+                </div>
             </div>
-            <div class="image">
-                <img src="assets/project1.png" alt="project 1">
+            <div class="project">
+                <div class="image wow fadeInLeft data-wow-duration="2s" data-wow-delay="0.7s"">
+                    <img src="assets/project2.png" alt="project 1">
+                </div>
+                <div class="description">
+                    <h3>Metal Subgenre Quiz</h3>
+                    <p>This is a fun, fully responsive quiz that was a joint effort between myself and another developer. Quiz results are dynamically added to the page with jQuery and <a href="http://handlebarsjs.com/" title="Handlebars is a JavaScript templating engine">Handlebars</a>.</p>
+                    <span>HTML5 | CSS3 | jQuery</span>
+                    <a href="#" class="project-btn">See it live</a>
+                    <a href="#" class="project-btn">Github</a>
+                </div>
             </div>
-        </div>
-        <div class="project">
-            <div class="image">
-                <img src="assets/project2.png" alt="project 1">
-            </div>
-            <div class="description">
-                <h3>Metal Subgenre Quiz</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, quae.</p>
-                <span>HTML 5 | CSS3 | jQuery</span>
-                <a href="#">See it live</a>
-            </div>
-        </div>
-        <div class="project">
-            <div class="description">
-                <h3> Travelog Budget App</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, quae.</p>
-                <span>HTML 5 | CSS3 | React | Firebase</span>
-                <a href="#">See it live</a>
-            </div>
-            <div class="image">
-                <img src="assets/project3.png" alt="project 2">
+            <div class="project">
+                <div class="description">
+                    <h3> Travelog Budget App</h3>
+                    <p>Travelog is a practical budgeting app designed to help travelers ensure that they're spending within their budgets. Content is dynamically added in with React, and expense items can be retrieved and removed using <a href="https://firebase.google.com/" title="Firebase provides a realtime database and backend as a service">Firebase</a>.</p>
+                    <span>HTML5 | CSS3 | React | Firebase</span>
+                    <a href="#" class="project-btn">See it live</a>
+                    <a href="#" class="project-btn">Github</a>
+                </div>
+                <div class="image wow fadeInRight data-wow-duration="2s" data-wow-delay="0.7s"">
+                    <img src="assets/project3.png" alt="project 2">
+                </div>
             </div>
         </div>
     </section>
     <section id="skills" class="skills-section">
-        <div class="skill">
-            <h2>Skills</h2>
-            <ul>
-                <li class="devicons devicons-html5"></li>
-                <li class="devicons devicons-css3"></li>
-                <li class="devicons devicons-javascript"></li>
-                <li class="devicons devicons-jquery"></li>
-                <li class="devicons devicons-firebase"></li>
-                <li class="devicons devicons-react"></li>
-                <li class="devicons devicons-bootstrap"></li>
-            </ul>
-        </div>
-        <div>
-            <h2>Tools</h2>
-            <ul>
-                <li class="devicons devicons-terminal"></li>
-                <!--                 <li class="devicons devicons-sublime"></li> -->
-                <li class="devicons devicons-sass"></li>
-                <li class="devicons devicons-gulp"></li>
-                <li class="devicons devicons-git"></li>
-                <li class="devicons devicons-github_badge"></li>
-                <li class="devicons devicons-jira"></li>
-            </ul>
-        </div>
-    </section>
-    <section id="contact" class="contact-section wrapper">
-        <span>Send Me A</span>
-        <h2>Message</h2>
-        <p>Want to work with me? You can reach me at joce.lum@gmail.com or fill out the form below!</p>
-        <div class="form-section">
-            <form action="#">
-                <div class="user-contact">
-                    <input type="text" name="name" placeholder="Full Name" required="">
-                    <input type="tel" name="number" placeholder="Phone #">
-                    <input type="email" name="email" placeholder="Email address">
-                </div>
-                <div class="user-form">
-                    <textarea rows="9" cols="50" placeholder="Message Body"></textarea>
-                </div>
-                <div class="submit-btn">    
-                    <input type="submit" value="Send Message">
-                </div>
-            </form>
+        <div class="wrapper">
+            <div class="skill">
+                <h2>Skills</h2>
+                <ul>
+                    <li class="devicons devicons-html5" alt="html5"><span>HTML5</span></li>
+                    <li class="devicons devicons-css3"><span>CSS3</span></li>
+                    <li class="devicons devicons-javascript"><span>Javascript</li>
+                    <li class="devicons devicons-jquery"><span>jQuery</span></li>
+                    <li class="devicons devicons-firebase"><span>Firebase</span></li>
+                    <li class="devicons devicons-react"><i class="devicon-react-original"></i><span>React</span></li>
+                </ul>
             </div>
+            <div>
+                <h2>Tools</h2>
+                <ul>
+                    <li class="devicons devicons-terminal"><span>Terminal</span></li>
+                    <li class="devicons devicons-sass"><span>SASS</span></li>
+                    <li class="devicons devicons-gulp"><span>Gulp</span></li>
+                    <li class="devicons devicons-git"><span>Git</span></li>
+                    <li class="devicons devicons-github_badge"><span>Github</span></li>
+                    <li class="devicons devicons-bootstrap"><span>Bootstrap</span></li>
+                    <li class="devicons devicons-jira"><span>Jira</span></li>
+                </ul>
+            </div>
+        </div>
     </section>
-    <footer></footer>
+    <section id="contact" class="contact-section">
+        <div class="contact wrapper">
+            <span class="title">Send Me A</span>
+            <h2>Message</h2>
+            <p>Want to work with me? You can reach me at <a href="mailto:joce.lum@gmail.com">joce.lum@gmail.com</a> or fill out the form below!</p>
+            <div class="form-section">
+                <form action="#">
+                    <div class="user-contact">
+                        <input type="text" name="name" placeholder="Full Name" required="">
+                        <input type="tel" name="number" placeholder="Phone #">
+                        <input type="email" name="email" placeholder="Email address">
+                    </div>
+                    <div class="user-form">
+                        <textarea rows="10" cols="50" placeholder="Message Body"></textarea>
+                    </div>
+                    <div class="submit-btn">
+                        <input type="submit" value="Send Message">
+                        <span>&rarr;</span>
+                    </div>
+                </form>
+            </div>
+            <div class="backToTop">
+                <a href="#home"><i class="fa fa-angle-double-up" aria-hidden="true"></i>
+                <span>Back to top</span></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper">
+            <div class="credit">
+                <p>Site based off of UNITED by Templines on ThemeForest & Coded by Jocelyn Lum</p>
+            </div>
+            <div class="social-media">
+                <a href="https://twitter.com/jocecodes"><i class="fa fa-twitter fa-inverse fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/jocelyn-lum-65905a50/"><i class="fa fa-linkedin fa-inverse fa-2x"></i></a>
+                <a href="https://github.com/JoceLum">  <i class="fa fa-github-alt fa-inverse fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="public/scripts/wow.min.js"></script>
     <script src="public/scripts/scripts.js"></script>
 </body>
 

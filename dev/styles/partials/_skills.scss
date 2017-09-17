@@ -1,12 +1,21 @@
 .skills-section {
+	padding: 50px 0;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
+	background-color: $lightergrey;
+	@include respond-to('large')  {
+	    padding: 50px;
+	}
+	@include respond-to('medium')  {
+		padding: 80px;
+	}
 
 	h2 {
 		font-size: 3.6rem;
 		text-transform: uppercase;
+		text-align: left;
 		&:before {
 		    content: "";
 		    width: 200px;
@@ -17,11 +26,29 @@
 		}
 	}
 
+	ul {
+		margin-bottom: 50px;
+		padding-left: 0;
+	}
+
 	li {
 		padding: 20px;
+		display: inline-block;
+
+		span {
+			display: block;
+			font-family: $headerFont;
+			font-size: 1rem;
+			padding-top: 5px;
+			text-align: center;
+		}
 	}
 
     .devicons {
-        font-size: 100px;
+        font-size: 80px;
+        &:hover {
+        	background-image: url(/assets/box.png);
+        	background-color: $lightgrey;
+        }
     }
 }

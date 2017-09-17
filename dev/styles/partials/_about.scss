@@ -1,8 +1,21 @@
 .about-me-section {
+    background-color: $lightergrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include respond-to('large')  {
+        padding: 50px;
+    }
+}
+
+.about {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-content: center;
+    @include respond-to('medium') {
+        padding: 50px;
+    }
 
     .content,
     .images {
@@ -49,14 +62,13 @@
         z-index: 2;
         background-image: url(/assets/me.jpg)
     }
-    .yellow-box {
+    .colour-box {
         height: 200px;
         width: 200px;
         position: absolute;
         z-index: 1;
         top: 50px;
         left: 145px;
-        // background-color: lightgreen;
-        background-color: $yellow;
+        background-color: $accentColour;
     }
 }
