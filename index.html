@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jocelyn Lum</title>
+    <title>Jocelyn Lum | Portfolio</title>
     <!--GENERAL CSS FILE-->
     <link rel="stylesheet" href="public/styles/styles.css">
     <!--GOOGLE FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i|Montserrat:400,700" rel="stylesheet">
+    <!--FAVICON-->
+    <link type="image/png" href="assets/logo.png" rel="icon">
     <!--SKILLS SECTION ICONS-->
     <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -20,7 +22,14 @@
 
 <body>
     <header>
-    <div class="fa fa-bars fa-3x"></div>
+        <!--Hamburger menu icon for mobile mode only-->
+        <div id="nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!--Navbar only for desktop and tablet views-->
         <div id="home" class="nav-section">
             <ul class="nav">
                 <li class="animated fadeInLeft first"><a href="#home"><span>01</span>Home</a></li>
@@ -29,6 +38,7 @@
                 <li class="animated fadeInLeft forth"><a href="#skills"><span>04</span>Skills</a></li>
                 <li class="animated fadeInLeft fifth"><a href="#contact"><span>05</span>Contact</a></li>
             </ul>
+            <!--Navbar for mobile view only-->
             <ul class="nav-mobile">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
@@ -45,8 +55,8 @@
     <section id="about" class="about-me-section">
         <div class="about wrapper">
             <div class="content">
-                <span>I am a web developer based in Toronto!</span>
-                <p>I also just graduated from HackerYou's Immersive Web Development Bootcamp. Prior to this, I was actually working as a web developer at Rogers Communications. I decided to leave my contract there to focus on strengthening my skills, as well as learning new frameworks and libraries.</p>
+                <span>I am a web developer based in Toronto.</span>
+                <p>I also just graduated from HackerYou's Immersive Web Development Bootcamp. Prior to this, I was working as a web developer at Rogers Communications. I decided to leave my contract there to focus on strengthening my skills, as well as learning new frameworks and libraries.</p>
                 <p>My biggest passion as a developer is building beautiful, interactive, and fully-responsive sites. I always strive to write clean, semantic code, and am constantly on the lookout for the best techniques. What I love most about this industry is the endless learning opportunities that it presents, and I am always inspired by new technologies.</p>
                 <p>Outside of coding, I enjoy traveling, listening to podcasts and music, cooking, sampling new cuisines, and exploring the city!</p>
             </div>
@@ -67,20 +77,20 @@
                     <a href="http://jocelum.com/project2/" class="project-btn">See it live</a>
                     <a href="https://github.com/JoceLum/startupz" class="project-btn">Github</a>
                 </div>
-                <div class="image wow fadeInRight data-wow-duration=" 2s " data-wow-delay="0.7s "">
-                    <img src="assets/project1.png" alt="project 1">
+                <div class="image wow fadeInRight data-wow-duration="2s" data-wow-delay="0.7s"">
+                    <img src="../assets/project1.png" alt="project 1">
                 </div>
             </div>
             <div class="project project-right">
-                <div class="image wow fadeInLeft data-wow-duration=" 2s " data-wow-delay="0.7s "">
-                    <img src="assets/project2.png" alt="project 1">
+                <div class="image wow fadeInLeft data-wow-duration="2s" data-wow-delay="0.7s"">
+                    <img src="../assets/project2.png" alt="project 1">
                 </div>
                 <div class="description">
                     <h3>Metal Subgenre Quiz</h3>
                     <p>This is a fun, fully responsive quiz that was a joint effort between myself and another developer. Quiz results are dynamically added to the page with jQuery and <a href="http://handlebarsjs.com/" title="Handlebars is a JavaScript templating engine">Handlebars</a>.</p>
                     <span>HTML5 | CSS3 | jQuery</span>
                     <a href="#" class="project-btn">See it live</a>
-                    <a href="https://github.com/JoceLum/metal-subgenre-quiz" class="project-btn">Github</a>
+                    <a href="https://github.com/JoceLum/MetalSubgenreQuiz" class="project-btn">Github</a>
                 </div>
             </div>
             <div class="project">
@@ -91,8 +101,8 @@
                     <a href="https://project-6-7f761.firebaseapp.com/" class="project-btn">See it live</a>
                     <a href="https://github.com/JoceLum/travelog" class="project-btn">Github</a>
                 </div>
-                <div class="image wow fadeInRight data-wow-duration=" 2s " data-wow-delay="0.7s "">
-                    <img src="assets/project3.png" alt="project 2">
+                <div class="image wow fadeInRight data-wow-duration="2s" data-wow-delay="0.7s"">
+                    <img src="../assets/project3.png" alt="project 2">
                 </div>
             </div>
         </div>
@@ -130,14 +140,14 @@
             <h2>Message</h2>
             <p>Want to work with me? You can reach me at <a href="mailto:joce.lum@gmail.com">joce.lum@gmail.com</a> or fill out the form below!</p>
             <div class="form-section">
-                <form action="#">
+                <form action="https://formspree.io/joce.lum@gmail.com" method="POST">
                     <div class="user-contact">
                         <input type="text" name="name" placeholder="Full Name" required="">
                         <input type="tel" name="number" placeholder="Phone #">
-                        <input type="email" name="email" placeholder="Email address">
+                        <input type="email" name="email" placeholder="Email address" required>
                     </div>
                     <div class="user-form">
-                        <textarea rows="10" cols="50" placeholder="Message Body"></textarea>
+                        <textarea rows="10" cols="50" name="message" placeholder="Message Body"></textarea>
                     </div>
                     <div class="submit-btn">
                         <input type="submit" value="Send Message">
@@ -153,7 +163,7 @@
     </section>
     <footer>
         <div class="credit">
-            <p>Site based off of UNITED by Templines on ThemeForest<span>Coded by Jocelyn Lum</span></p>
+            <p>Site based off of UNITED by Templines on ThemeForest | Coded by Jocelyn Lum</p>
         </div>
         <div class="social-media">
             <a href="https://twitter.com/jocecodes"><i class="fa fa-twitter fa-inverse fa"></i></a>

@@ -3,8 +3,8 @@
     @include respond-to('large') {
         padding: 50px;
     }
-    @include respond-to('medium') {
-        padding: 80px;
+    @include respond-to('small') {
+        padding: 20px;
     }
     h2 {
         text-transform: uppercase;
@@ -109,6 +109,12 @@
             border: 1px solid $accentColour;
             text-decoration: none;
         }
+    }
+}
+
+.description:nth-child(even) {
+    .project-btn {
+        margin: 10px 10px 0 0;
     }
 }
 

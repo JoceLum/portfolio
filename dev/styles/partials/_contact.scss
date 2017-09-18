@@ -122,6 +122,8 @@ form {
     input[type='submit'] {
         font-family: $headerFont;
         background-color: transparent;
+        -webkit-appearance: none;
+        -webkit-border-radius: 0;
         text-transform: uppercase;
         font-weight: 400;
         font-size: 0.8rem;
