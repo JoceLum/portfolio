@@ -11,11 +11,17 @@
 	@include respond-to('medium')  {
 		padding: 80px;
 	}
+	@include respond-to('small')  {
+		text-align: center;
+	}
 
 	h2 {
 		font-size: 3.6rem;
 		text-transform: uppercase;
 		text-align: left;
+		@include respond-to('small')  {
+			text-align: center;
+		}
 		&:before {
 		    content: "";
 		    width: 200px;

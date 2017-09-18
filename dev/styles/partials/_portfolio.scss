@@ -26,7 +26,6 @@
     }
 }
 
-
 .project {
     display: flex;
     flex-wrap: wrap;
@@ -101,7 +100,7 @@
         display: inline-block;
         border: 1px solid $mediumgrey;
         color: $mediumgrey;
-        margin-top: 10px;
+        margin: 10px 0 0 10px;
         padding: 12px;
         transition: all, 0.3s;
         &:hover {
@@ -110,7 +109,13 @@
             border: 1px solid $accentColour;
             text-decoration: none;
         }
-    } 
+    }
+}
+
+.project-right {
+    @include respond-to('medium') {
+        flex-direction: column;
+    }
 }
 
 .image {

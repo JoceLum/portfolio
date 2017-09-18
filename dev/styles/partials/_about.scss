@@ -1,9 +1,10 @@
 .about-me-section {
     background-color: $lightergrey;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    @include respond-to('large')  {
+    @include respond-to('large') {
         padding: 50px;
     }
 }
@@ -12,14 +13,24 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
+    align-items: baseline;
     @include respond-to('medium') {
         padding: 50px;
     }
 
+    .content {
+        width: 60%;
+    }
+
+    .images {
+        width: 40%;
+    }
+
     .content,
     .images {
-        width: 50%;
+        @include respond-to('small') {
+            width: 100%;
+        }
     }
 }
 
@@ -55,6 +66,10 @@
 .images {
     padding-left: 30px;
     position: relative;
+    @include respond-to('small') {
+        display: none;
+    }
+
     .primary-image {
         height: 220px;
         width: 220px;
@@ -66,9 +81,8 @@
         height: 200px;
         width: 200px;
         position: absolute;
-        z-index: 1;
         top: 50px;
-        left: 145px;
+        left: 110px;
         background-color: $accentColour;
     }
 }

@@ -1,91 +1,155 @@
-    .nav {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        justify-content: flex-end;
+.nav {
+    list-style: none;
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    @include respond-to('medium') {
+        justify-content: center;
+        padding-left: 0;
+    }
+    @include respond-to('small') {
+        display: none;
+    }
 
-        li {
-            padding: 20px;
+    li {
+        padding: 20px;
+        @include respond-to('medium') {
+            padding: 18px;
         }
+    }
 
-        li.first {
-            animation-delay: 0.5s;
-        }
+    li.first {
+        animation-delay: 0.5s;
+    }
 
-        li.second {
-            animation-delay: 1s;
-        }
+    li.second {
+        animation-delay: 1s;
+    }
 
-        li.third {
-            animation-delay: 1.5s;
-        }
+    li.third {
+        animation-delay: 1.5s;
+    }
 
-        li.forth {
-            animation-delay: 2s;
-        }
+    li.forth {
+        animation-delay: 2s;
+    }
 
-        li.fifth {
-            animation-delay: 2.5s;
-        }
+    li.fifth {
+        animation-delay: 2.5s;
+    }
 
-        span {
-            font-family: $bodyFont;
-            display: block;
-            margin-bottom: 15px;
-            text-align: right;
-            font-weight: 300;
+    span {
+        font-family: $bodyFont;
+        display: block;
+        margin-bottom: 15px;
+        text-align: right;
+        font-weight: 300;
+    }
+
+    a {
+        text-transform: uppercase;
+        border-top: 1px solid $mediumgrey;
+        color: $mediumgrey;
+        padding-top: 5px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        transition: all 0.5s;
+        &:hover {
+            color: $accentColour;
+            border-top: 1px solid $accentColour;
         }
+    }
+}
+
+.hero-section {
+    position: relative;
+    top: 100px;
+    background-image: url(/assets/hero_image.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    border: 1px solid $darkgrey;
+    color: $lightgrey;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(58, 58, 58, 0.5);
+    }
+
+    h1,
+    span {
+        z-index: 1;
+    }
+
+    h1 {
+        padding-top: 20px;
+        @include respond-to('small') {
+            font-size: 3rem;
+        }
+    }
+
+    span {
+        font-family: $bodyFont;
+        font-style: italic;
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+        @include respond-to('small') {
+            font-size: 1rem;
+        }
+    }
+}
+
+.fa-bars {
+    visibility: hidden;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 10;
+    @include respond-to('small') {
+        visibility: visible;
+    }
+}
+
+.nav-mobile {
+    display: none;
+    @include respond-to('small') {
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 0;
+        position: fixed;
+        background-color: rgba(58, 58, 58, 0.9);
+        z-index: 10;
+        width: 100%;
+        height: 90%;
+    }
+    @include respond-to('medium') {
+        display: none;
+    }
+
+    li {
+        padding-right: 30px;
 
         a {
-            text-transform: uppercase;
-            border-top: 1px solid $mediumgrey;
-            color: $mediumgrey;
-            padding-top: 5px;
-            font-size: 0.8rem;
-            font-weight: 700;
-            transition: all 0.5s;
+            display: inline-block;
+            padding: 20px;
+            text-align: right;
+            font-size: 3rem;
+            color: $lightgrey;
             &:hover {
                 color: $accentColour;
-                border-top: 1px solid $accentColour;
             }
         }
     }
-
-    .hero-section {
-        position: relative;
-        background-image: url(/assets/hero_image.JPG);
-        background-size: cover;
-        text-align: center;
-        border: 1px solid $darkgrey;
-        color: $lightgrey;
-        height: 80vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background-color: rgba(58, 58, 58, 0.5);
-        }
-
-        h1,
-        span {
-            z-index: 1;
-        }
-
-        h1 {
-            padding-top: 20px;
-        }
-
-        span {
-            font-family: $bodyFont;
-            font-style: italic;
-            font-size: 1.4rem;
-            letter-spacing: 2px;
-        }
-    }
+}

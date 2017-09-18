@@ -1,6 +1,7 @@
 .contact-section {
     padding: 50px 0;
 }
+
 .contact {
     display: flex;
     flex-direction: column;
@@ -61,11 +62,10 @@ form {
         flex-direction: column;
         width: calc(50% - 40px);
         margin: 80px 20px;
-        @include respond-to('medium')  {
+        @include respond-to('medium') {
             width: 100%;
             align-items: center;
         }
-
 
         input:not([type='submit']) {
             border: none;
@@ -74,11 +74,14 @@ form {
             padding: 21px 0;
             width: 800px;
             color: $mediumgrey;
-            @include respond-to('large')  {
+            @include respond-to('large') {
                 width: 350px;
             }
             @include respond-to('medium') {
                 width: 500px;
+            }
+            @include respond-to('small') {
+                width: 350px;
             }
             &:focus {
                 border-bottom: 2px solid $darkgrey;
@@ -94,6 +97,12 @@ form {
         font-family: $bodyFont;
         outline: none;
         color: $mediumgrey;
+        @include respond-to('medium') {
+            width: 70%;
+        }
+        @include respond-to('small') {
+            width: 100%;
+        }
 
         &:focus {
             border-bottom: 2px solid $darkgrey;
@@ -107,8 +116,8 @@ form {
     &:hover {
         color: $accentColour;
     }
-    @include respond-to('medium')  {
-        margin: 0 auto;    
+    @include respond-to('medium') {
+        margin: 0 auto;
     }
     input[type='submit'] {
         font-family: $headerFont;
@@ -130,7 +139,7 @@ form {
 }
 
 .backToTop {
-    padding-top: 50px;
+    padding-top: 100px;
     i {
         display: block;
         text-align: center;

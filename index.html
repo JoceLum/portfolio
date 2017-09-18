@@ -20,13 +20,21 @@
 
 <body>
     <header>
+    <div class="fa fa-bars fa-3x"></div>
         <div id="home" class="nav-section">
-            <ul class="nav wrapper">
+            <ul class="nav">
                 <li class="animated fadeInLeft first"><a href="#home"><span>01</span>Home</a></li>
                 <li class="animated fadeInLeft second"><a href="#about"><span>02</span>About Me</a></li>
                 <li class="animated fadeInLeft third"><a href="#portfolio"><span>03</span>Portfolio</a></li>
                 <li class="animated fadeInLeft forth"><a href="#skills"><span>04</span>Skills</a></li>
                 <li class="animated fadeInLeft fifth"><a href="#contact"><span>05</span>Contact</a></li>
+            </ul>
+            <ul class="nav-mobile">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hero-section wrapper">
                 <span>Hi there, welcome to the portfolio of</span>
@@ -37,10 +45,10 @@
     <section id="about" class="about-me-section">
         <div class="about wrapper">
             <div class="content">
-                <span>I am a web developer based in Toronto.</span>
+                <span>I am a web developer based in Toronto!</span>
                 <p>I also just graduated from HackerYou's Immersive Web Development Bootcamp. Prior to this, I was actually working as a web developer at Rogers Communications. I decided to leave my contract there to focus on strengthening my skills, as well as learning new frameworks and libraries.</p>
                 <p>My biggest passion as a developer is building beautiful, interactive, and fully-responsive sites. I always strive to write clean, semantic code, and am constantly on the lookout for the best techniques. What I love most about this industry is the endless learning opportunities that it presents, and I am always inspired by new technologies.</p>
-                <p>Outside of coding, I enjoy traveling, cooking, listening to podcasts and music, sampling new cuisines, and exploring my city!</p>
+                <p>Outside of coding, I enjoy traveling, listening to podcasts and music, cooking, sampling new cuisines, and exploring the city!</p>
             </div>
             <div class="images">
                 <div class="primary-image"></div>
@@ -56,15 +64,15 @@
                     <h3>Startupz PSD Conversion</h3>
                     <p>Startupz is a fully responsive website built based on a static PSD mockup. I was given the creative reigns in determining the layout for tablet and mobile screen sizes.</p>
                     <span>HTML5 | CSS3 | Flexbox</span>
-                    <a href="#" class="project-btn">See it live</a>
-                    <a href="#" class="project-btn">Github</a>
+                    <a href="http://jocelum.com/project2/" class="project-btn">See it live</a>
+                    <a href="https://github.com/JoceLum/startupz" class="project-btn">Github</a>
                 </div>
-                <div class="image wow fadeInRight data-wow-duration="2s" data-wow-delay="0.7s"">
+                <div class="image wow fadeInRight data-wow-duration=" 2s " data-wow-delay="0.7s "">
                     <img src="assets/project1.png" alt="project 1">
                 </div>
             </div>
-            <div class="project">
-                <div class="image wow fadeInLeft data-wow-duration="2s" data-wow-delay="0.7s"">
+            <div class="project project-right">
+                <div class="image wow fadeInLeft data-wow-duration=" 2s " data-wow-delay="0.7s "">
                     <img src="assets/project2.png" alt="project 1">
                 </div>
                 <div class="description">
@@ -72,7 +80,7 @@
                     <p>This is a fun, fully responsive quiz that was a joint effort between myself and another developer. Quiz results are dynamically added to the page with jQuery and <a href="http://handlebarsjs.com/" title="Handlebars is a JavaScript templating engine">Handlebars</a>.</p>
                     <span>HTML5 | CSS3 | jQuery</span>
                     <a href="#" class="project-btn">See it live</a>
-                    <a href="#" class="project-btn">Github</a>
+                    <a href="https://github.com/JoceLum/metal-subgenre-quiz" class="project-btn">Github</a>
                 </div>
             </div>
             <div class="project">
@@ -80,10 +88,10 @@
                     <h3> Travelog Budget App</h3>
                     <p>Travelog is a practical budgeting app designed to help travelers ensure that they're spending within their budgets. Content is dynamically added in with React, and expense items can be retrieved and removed using <a href="https://firebase.google.com/" title="Firebase provides a realtime database and backend as a service">Firebase</a>.</p>
                     <span>HTML5 | CSS3 | React | Firebase</span>
-                    <a href="#" class="project-btn">See it live</a>
-                    <a href="#" class="project-btn">Github</a>
+                    <a href="https://project-6-7f761.firebaseapp.com/" class="project-btn">See it live</a>
+                    <a href="https://github.com/JoceLum/travelog" class="project-btn">Github</a>
                 </div>
-                <div class="image wow fadeInRight data-wow-duration="2s" data-wow-delay="0.7s"">
+                <div class="image wow fadeInRight data-wow-duration=" 2s " data-wow-delay="0.7s "">
                     <img src="assets/project3.png" alt="project 2">
                 </div>
             </div>
@@ -144,15 +152,13 @@
         </div>
     </section>
     <footer>
-        <div class="wrapper">
-            <div class="credit">
-                <p>Site based off of UNITED by Templines on ThemeForest & Coded by Jocelyn Lum</p>
-            </div>
-            <div class="social-media">
-                <a href="https://twitter.com/jocecodes"><i class="fa fa-twitter fa-inverse fa-2x"></i></a>
-                <a href="https://www.linkedin.com/in/jocelyn-lum-65905a50/"><i class="fa fa-linkedin fa-inverse fa-2x"></i></a>
-                <a href="https://github.com/JoceLum">  <i class="fa fa-github-alt fa-inverse fa-2x"></i></a>
-            </div>
+        <div class="credit">
+            <p>Site based off of UNITED by Templines on ThemeForest<span>Coded by Jocelyn Lum</span></p>
+        </div>
+        <div class="social-media">
+            <a href="https://twitter.com/jocecodes"><i class="fa fa-twitter fa-inverse fa"></i></a>
+            <a href="https://www.linkedin.com/in/jocelyn-lum-65905a50/"><i class="fa fa-linkedin fa-inverse fa"></i></a>
+            <a href="https://github.com/JoceLum">  <i class="fa fa-github-alt fa-inverse fa"></i></a>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

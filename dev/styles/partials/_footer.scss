@@ -1,24 +1,37 @@
 footer {
-	background-color: $darkgrey;
-	color: $lightgrey;
-	font-size: 0.8rem;
+    background-color: $darkgrey;
+    color: $lightgrey;
+    font-size: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    @include respond-to('medium') {
+        flex-direction: column;
+        text-align: center;
+    }
+}
 
-	.wrapper {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		align-items: center;
-		padding: 10px 0;
-	}
+.credit {
+    span {
+        display: block;
+    }
 }
 
 .social-media {
-	i {
-		padding: 10px 15px;
-		transition: all 0.5s;
-		&:hover {
-			color: $accentColour;
-			transform: scale(1.2);
-		}
-	}
+    i {
+        border: 1px solid white;
+        border-radius: 50%;
+        padding: 10px;
+        margin: 10px 15px;
+        transition: all 0.5s;
+        @include respond-to('medium') {
+            margin: 15px;
+        }
+        &:hover {
+            background-color: $accentColour;
+            transform: scale(1.2);
+        }
+    }
 }

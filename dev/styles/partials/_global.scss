@@ -1,6 +1,7 @@
 body {
     font-size: 14px;
     color: $darkgrey;
+    position: relative;
 }
 
 header,
@@ -9,7 +10,7 @@ section {
 }
 
 .wrapper {
-    max-width: 1000px;
+    max-width: 1170px;
     margin: 0 auto;
 }
 
@@ -29,10 +30,10 @@ a {
 }
 
 h1 {
-	text-transform: uppercase;
-	font-size: 3.5rem;
-	line-height: 60px;
-	font-weight: 700;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    line-height: 60px;
+    font-weight: 700;
 }
 
 
@@ -42,12 +43,10 @@ input {
 }
 
 a {
-	text-decoration: none;
-	color: $darkgrey;
+    text-decoration: none;
+    color: $darkgrey;
 }
 
 li {
-    list-style: none;
+    list-style: none;   
 }
-
-
