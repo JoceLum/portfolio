@@ -25,13 +25,24 @@ $(function() {
 
     //Hamburger menu for mobile mode
     $('#nav-icon').on('click', function() {
-        $(this).toggleClass('open');
-        if ($('.nav-mobile').css('display') == "flex") {
-            $('.nav-mobile').css('display', 'none');
-        } else {
-            $('.nav-mobile').css('display', 'flex');
+        var $window = $(window);
+        if (($window.width() < 480)) {
+            $(this).toggleClass('open');
+            if ($('.nav-mobile').css('display') == "flex") {
+                $('.nav-mobile').css('display', 'none');
+            } else {
+                $('.nav-mobile').css('display', 'flex');
+            }
         }
     })
+
+    //in the event that the user does not close hamburger menu (while viewing site on their computer) and expands the width beyond mobile view, this will prevent the mobile version of the nav bar from showing underneath the desktop version
+    $(window).resize(function() {
+        if ($(window).width() > 480) {
+            $('#nav-icon').removeClass('open');
+            $('.nav-mobile').css('display', 'none');
+        } 
+    });
 
     //to initialize wow.js for transition effects in portfolio section    
     new WOW().init();

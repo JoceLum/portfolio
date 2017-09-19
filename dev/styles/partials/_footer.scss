@@ -27,7 +27,7 @@ footer {
         margin: 10px 15px;
         transition: all 0.5s;
         @include respond-to('medium') {
-            margin: 15px;
+            margin: 10px;
         }
         &:hover {
             background-color: $accentColour;
