@@ -82,6 +82,10 @@
     @include respond-to('medium') {
         background-attachment: initial;
     }
+    @include respond-to('small') {
+        top: 0;
+        height: 100vh;
+    }
     &:before {
         content: '';
         position: absolute;
