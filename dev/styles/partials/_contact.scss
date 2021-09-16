@@ -1,5 +1,6 @@
 .contact-section {
     padding: 50px 0;
+    background-color: $lightergrey;
 }
 
 .contact {
@@ -12,7 +13,7 @@
         font-family: $bodyFont;
         font-style: italic;
         text-align: right;
-        color: $mediumgrey;
+        color: $darkgrey;
         padding-bottom: 5px;
     }
     h2 {
@@ -43,7 +44,7 @@
 
         a {
             font-family: $bodyFont;
-            color: $mediumgrey;
+            color: $darkgrey;
             transition: all 0.3s;
             &:hover {
                 color: $accentColour;
@@ -69,11 +70,11 @@ form {
 
         input:not([type='submit']) {
             border: none;
-            border-bottom: 2px solid $lightgrey;
+            border-bottom: 2px solid $mediumgrey;
             outline: none;
             padding: 21px 0;
             width: 800px;
-            color: $mediumgrey;
+            color: $darkgrey;
             -webkit-appearance: none;
             -webkit-border-radius: 0;
             @include respond-to('large') {
@@ -95,10 +96,10 @@ form {
 .user-form {
     textarea {
         border: none;
-        border-bottom: 2px solid $lightgrey;
+        border-bottom: 2px solid $mediumgrey;
         font-family: $bodyFont;
         outline: none;
-        color: $mediumgrey;
+        color: $darkgrey;   
         -webkit-appearance: none;
         -webkit-border-radius: 0;
         @include respond-to('medium') {

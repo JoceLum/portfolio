@@ -35,17 +35,19 @@
         font-weight: 700;
         line-height: 32px;
         font-size: 1.6rem;
-        &:before {
-            content: "";
-            width: 100px;
-            display: block;
-            height: 2px;
-            background-color: $darkgrey;
-            margin-bottom: 20px;
-        }
     }
+
+    .about-hello::before {
+        content: "";
+        width: 100px;
+        display: block;
+        height: 2px;
+        background-color: $darkgrey;
+        margin-bottom: 20px;
+    }
+
     p {
-        color: $mediumgrey;
+        color: $darkgrey;
         font-size: 0.9rem;
         font-weight: 400;
         line-height: 28px;
@@ -70,7 +72,7 @@
         width: 220px;
         position: absolute;
         z-index: 2;
-        background-image: url(/assets/me.jpg)
+        background-image: url(../../assets/me.jpg)
     }
     .colour-box {
         height: 200px;

@@ -67,10 +67,11 @@
         font-weight: 700;
         font-size: 1.4rem;
         line-height: 32px;
+        color: $mediumgrey;
     }
     p,
     span {
-        color: $mediumgrey;
+        color: $darkgrey;
         font-weight: 400;
         font-size: 0.9rem;
         line-height: 28px
@@ -88,7 +89,7 @@
 
     a {
         font-family: $bodyFont;
-        color: $mediumgrey;
+        color: $darkgrey;
         &:hover {
             text-decoration: underline;
         }
@@ -99,13 +100,13 @@
         text-transform: uppercase;
         display: inline-block;
         border: 1px solid $mediumgrey;
-        color: $mediumgrey;
+        color: $darkgrey;
         margin: 10px 0 0 10px;
         padding: 12px;
         transition: all, 0.3s;
         &:hover {
             background-color: $accentColour;
-            background-image: url(/assets/box.png);
+            background-image: url(../../assets/box.png);
             color: $white;
             border: 1px solid $accentColour;
             text-decoration: none;

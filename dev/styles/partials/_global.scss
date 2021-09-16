@@ -4,8 +4,11 @@ body {
     position: relative;
 }
 
-header,
-section {
+.main-header,
+.about-me-section,
+.portfolio-section, 
+.skills-section,
+.contact-section {
     min-height: 100vh;
 }
 
@@ -38,7 +41,9 @@ h1 {
 
 
 p,
-input {
+span,
+input,
+li {
     font-family: $bodyFont;
 }
 
@@ -48,5 +53,6 @@ a {
 }
 
 li {
-    list-style: none;   
+    list-style: none;
+    color: $darkgrey;   
 }

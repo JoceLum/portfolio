@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="main-header">
         <!--Hamburger menu icon for mobile mode only-->
         <div id="nav-icon">
             <span></span>
@@ -32,7 +32,7 @@
         <!--Navbar only for desktop and tablet views-->
         <div id="home" class="nav-section">
             <ul class="nav">
-                <li class="animated fadeInLeft first"><a href="#home"><span>01</span>Home</a></li>
+                <li class="animated fadeInLeft first"><a href="index.html"><span>01</span>Home</a></li>
                 <li class="animated fadeInLeft second"><a href="#about"><span>02</span>About Me</a></li>
                 <li class="animated fadeInLeft third"><a href="#portfolio"><span>03</span>Portfolio</a></li>
                 <li class="animated fadeInLeft forth"><a href="#skills"><span>04</span>Skills</a></li>
@@ -48,17 +48,17 @@
             </ul>
             <div class="hero-section">
                 <h1>Jocelyn Lum</h1>
-                <span>Web Developer</span>
+                <span>UX Designer</span>
             </div>
         </div>
     </header>
     <section id="about" class="about-me-section">
         <div class="about wrapper">
             <div class="content">
-                <span>Hello there,</span>
-                <p>I am a Toronto-based web developer with 2 years of experience on a front-end team at Rogers Communications. During my time there, I learned a lot about the inner workings of a development team, and it was an amazing work experience overall. I recently decided to focus on honing my skills and learning new frameworks and tools, and was able to accomplish this through HackerYou's Immersive Web Development Bootcamp.</p>
-                <p>Constantly striving to build pixel perfect and fully-responsive sites, I also take pride in writing clean, semantic code. My favourite aspect of the industry is how it keeps changing and is always presenting new learning opportunities.</p>
-                <p>Outside of coding, I enjoy traveling, listening to podcasts and music, binging on Netflix shows, cooking, and sampling all the flavours of Toronto's vibrant culinary scene.</p>
+                <span class="about-hello">Hello there!</span>
+                <p>Throughout the past few years of my experience in the tech industry, one thing has always remained constant: my passion for creating digital experiences that are not only pleasing to the eye, but also intuitive and enjoyable for the user as well. With just over 3 years of web development experience under my belt, I made the transition over to UX design when the opportunity was presented to me early in the spring of 2019.</p>
+                <p>Being the sole UX designer for a software company that has never had one before presented some unique learning experiences. I played a pivotal role in providing the designs for several of our consumer-facing projects, and became the subject-matter expert for an accessibility initiative for AODA compliance. The former required learning how to use UX design tools on the job, as well as doing extensive research into UX best practices. Outside of work, I keep up with the industry as much as I can by attending UX conferences and talks (FITC, Fluxible, etc). I am also a member of the Interaction Design Foundation, and have taken several courses including “Design Thinking: The Beginner’s Guide” and “Human-Computer Interaction - HCI”.</p>
+                <p>When I am not preoccupied with latest UX puzzle, I spend most of my free time listening to podcasts and music, cooking, decorating my home, playing with my dog, and going out for trail runs. </p>
             </div>
             <div class="images">
                 <!--Portrait photo courtesy of Pam Lau-->
@@ -72,43 +72,42 @@
             <h2><span>My</span> Work</h2>
             <div class="project">
                 <div class="description">
-                    <h3>Startupz PSD Conversion</h3>
-                    <p>Startupz is a fully responsive website built based on a static PSD mockup. I was given the creative reigns in determining the layout for tablet and mobile screen sizes.</p>
-                    <span>HTML5 | CSS3 | Flexbox</span>
-                    <a href="http://jocelum.com/project2/" target="_blank" class="project-btn">See it live</a>
-                    <a href="https://github.com/JoceLum/startupz" target="_blank" class="project-btn">Github</a>
+                    <h3>ES Loyalty Console</h3>
+                    <p>This is a project I have been working on at Exchange Solutions since March 2019. It involves designing the UX/UI of the ES Loyalty platform, which is one of our core products.</p>
+                    <span>Balsamiq | Sketch | inVision</span>
+                    <a href="case-study.html" target="_blank" class="project-btn">See case study</a>
                 </div>
                 <div class="image wow fadeInRight data-wow-duration=" 2s " data-wow-delay="0.7s "">
-                    <img src="../assets/project1.png" alt="project 1">
+                    <img src="assets/project1.png" alt="project 1">
                 </div>
             </div>
             <div class="project project-right">
                 <div class="image wow fadeInLeft data-wow-duration=" 2s " data-wow-delay="0.7s "">
-                    <img src="../assets/project2-new.png" alt="project 2">
+                    <img src="assets/project2.png" alt="project 2">
                 </div>
                 <div class="description">
                     <h3>Metal Subgenre Quiz</h3>
-                    <p>This is a fun, fully responsive quiz that was a joint effort between myself and another developer. Quiz results are dynamically added to the page with jQuery and <a href="http://handlebarsjs.com/" title="Handlebars is a JavaScript templating engine" target="_blank">Handlebars</a>.</p>
+                    <p>This is a web development bootcamp project that I had worked on prior to beoming a UX Designer. It is a fun, fully responsive quiz that was a joint effort between myself and another developer. Quiz results are dynamically added to the page with jQuery and <a href="http://handlebarsjs.com/" title="Handlebars is a JavaScript templating engine" target="_blank">Handlebars</a>.</p>
                     <span>HTML5 | CSS3 | jQuery</span>
-                    <a href="http://www.jocelum.com/metalSubgenreQuiz/" target="_blank" class="project-btn">See it live</a>
+                    <a href="http://jocelum.s3-website.ca-central-1.amazonaws.com/project-2" target="_blank" class="project-btn">See it live</a>
                     <a href="https://github.com/JoceLum/MetalSubgenreQuiz" target="_blank" class="project-btn">Github</a>
                 </div>
             </div>
             <div class="project">
                 <div class="description">
                     <h3> Travelog Budget App</h3>
-                    <p>Travelog is a practical budgeting app designed to help travelers ensure that they're spending within their budgets. Content is dynamically added in with React, and expense items can be retrieved and removed using <a href="https://firebase.google.com/" title="Firebase provides a realtime database and backend as a service" target="_blank">Firebase</a>.</p>
+                    <p>As another web development bootcamp project, Travelog is a practical budgeting app designed to help travelers ensure that they're spending within their budgets. Content is dynamically added in with React, and expense items can be retrieved and removed using <a href="https://firebase.google.com/" title="Firebase provides a realtime database and backend as a service" target="_blank">Firebase</a>.</p>
                     <span>HTML5 | CSS3 | React | Firebase</span>
                     <a href="https://project-6-7f761.firebaseapp.com/" class="project-btn" target="_blank">See it live</a>
                     <a href="https://github.com/JoceLum/travelog" class="project-btn target=" target="_blank">Github</a>
                 </div>
                 <div class="image wow fadeInRight data-wow-duration=" 2s " data-wow-delay="0.7s "">
-                    <img src="../assets/project3.png" alt="project 2">
+                    <img src="assets/project3.png" alt="project 2">
                 </div>
             </div>
         </div>
     </section>
-    <section id="skills" class="skills-section">
+    <!-- <section id="skills" class="skills-section">
         <div class="wrapper">
             <div class="skill">
                 <h2>Skills</h2>
@@ -134,7 +133,7 @@
                 </ul>
             </div>
         </div>
-    </section>
+    </section> -->
     <section id="contact" class="contact-section">
         <div class="contact wrapper">
             <span class="title">Send Me A</span>
